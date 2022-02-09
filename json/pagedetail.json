@@ -1,0 +1,37 @@
+{
+    
+    
+    "Introduction" :{
+        "nomfemme" : "Simone Veil",
+        "datenaissance" : "1927-2017",
+        "citation" : "Ma revendication en tant que femme c'est que ma différence soit prise en compte, que je ne sois pas contrainte de m'adapter au modèle masculin.",
+        
+        "InformationsCles" : [
+
+            {
+                "titre" : "Ministre de la Santé",
+                "image" : "..."
+            },
+            
+            {
+                "titre" : "Déportée juive",
+                "image" : "..."
+            },
+
+            {
+                "titre" : "Légalisation avortement",
+                "image" : "..."
+            },
+
+            {
+                "titre" : "Grand-Croix de la Légion d'Honneur",
+                "image" : "..."
+            }
+
+
+
+
+
+        ]
+    }
+}

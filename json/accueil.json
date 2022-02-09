@@ -1,0 +1,62 @@
+{
+    "femmes":[
+       {
+          "nomfemme":"Marie Curie",
+          "datemarquante":{
+             "annee":"1903",
+             "intitule":"Prix Nobel"
+          },
+          "lienimage":"..."
+       },
+       {
+          "nomfemme":"Joséphine Baker",
+          "datemarquante":{
+             "annee":"1939",
+             "intitule":"Espionne"
+          },
+          "lienimage":"..."
+       },
+       {
+        "nomfemme":"Lee Miller",
+        "datemarquante":{
+           "annee":"1942",
+           "intitule":"Reporter de Guerre"
+        },
+        "lienimage":"..."
+        },
+        {
+        "nomfemme":"Simone de Beauvoir",
+        "datemarquante":{
+           "annee":"1949",
+           "intitule":"Ecrivaine engagée"
+        },
+        "lienimage":"..."
+        },
+        {
+            "nomfemme":"Greta Thunberg",
+            "datemarquante":{
+               "annee":"2018",
+               "intitule":"Militante Ecologiste"
+        },
+            "lienimage":"..."
+        }
+    ],
+    "datescles":[
+       {
+          "position":"Marie Curie",
+          "annee":"1938",
+          "intitule":"Indépendance des femmes par rapport à leur époux en France"
+       },
+       {
+          "position":"Lee Miller",
+          "annee":"1945",
+          "intitule":"Droit de vote pour les femmes"
+       },
+       {
+        "position":"Lee Miller",
+        "annee":"1946",
+        "intitule":"L'égalité entre hommes et femmes est inscrite dans le Préambule de la Constitution"
+        }
+
+    ]
+ }

@@ -10,7 +10,7 @@
 
             {
                 "titre" : "Ministre de la Santé",
-                "image" : "..."
+                "image" : "img/Logo1000Chemins.png"
             },
             
             {
@@ -28,10 +28,75 @@
                 "image" : "..."
             }
 
+        ],
+
+        "Description" : [
+
+            {
+                "titre" : "Politicienne Inspirante",
+                "image" : "img/politicienneinspirante.png"
+            }
 
 
+        ],
+
+        "Biographie" : [
+
+            {
+                "image" : "img/balance.png"
+            },
+
+            {
+                "image" : "img/justice.png"
+            },
+
+            {
+                "image" : "img/avortement.png"
+            },
+
+            {
+                "titre" : "Simone Veil lors de son discours de proposition de loi relatif à l'avortement à l'Assemblée Nationale le 26/11/1974.• Crédits : AFP",
+                "image" : "img/discoursveil.png"
+            },
+
+            {
+                "titre" : "La carte de déportée politique de Simone Veil (1927-2017). Exposition hommage 'Madame, nous vous aimons'",
+                "image" : "img/cartedeportee.png"
+            },
+
+            {
+                "titre" : "inserer vidéo",
+            }
 
 
+        ],
+
+        "FriseChronologique" : [
+
+            {
+                "titre" : "1942",
+                "image" : "L'avortement est puni de mort car il est considéré comme un 'crime contre la sureté de l'Etat'."
+            },
+            
+            {
+                "titre" : "1971",
+                "intitule" : "Le manifeste des 343 ('salopes') dans Le Nouvel Observateur."
+            },
+
+            {
+                "titre" : "1972",
+                "intitule" : "Procès de Bobigny : une jeune fille avorte suite à un viol et se fait dénoncer par son violeur. Pour la première fois, la victime sera relaxée et l'affaire deviendra médiatique."
+            },
+
+            {
+                "titre" : "1974-1975",
+                "intitutle" : "Discours de Simone Veil et légalisation de l'IVG. "
+            },
+
+            {
+                "lienvideo" : "https://www.youtube.com/watch?v=cTAmCUgoSZ4"
+            }
         ]
+
     }
 }

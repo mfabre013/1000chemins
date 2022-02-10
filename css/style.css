@@ -44,7 +44,8 @@ html {
     text-decoration: none;
     color: currentColor;
   }
-  /* /RESET */
+  /* RESET */
+
 
 body{
     background: #001233;
@@ -76,7 +77,6 @@ body{
     text-align: justify;
     margin-bottom: 0;
 }
-
 .ligne{
     margin-top: -600px;
     display: flex;
@@ -85,3 +85,18 @@ body{
     height: auto;
 }
 
+/* Style des textes */
+
+h1, h2, h3, h4{
+  font-family: 'Knewave', cursive;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  color : white
+}
+
+/* changement taille smile page accueil*/
+#smile{
+  width : 1.2em;
+  margin-left : 0.2em;
+}

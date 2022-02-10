@@ -49,7 +49,7 @@ html {
 body{
     background: #001233;
     align-content: center;
-    overflow-y: hidden;
+    
     overflow-x: scroll;
 }
 

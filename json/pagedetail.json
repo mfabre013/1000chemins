@@ -1,100 +1,94 @@
 {
-    
-    
-    "Introduction" :{
-        "nomfemme" : "Simone Veil",
-        "datenaissance" : "1927-2017",
-        "citation" : "Ma revendication en tant que femme c'est que ma différence soit prise en compte, que je ne sois pas contrainte de m'adapter au modèle masculin.",
-        
-        "InformationsCles" : [
-
+    "Introduction": {
+        "nomfemme": "Simone Veil",
+        "datenaissance": "1927-2017",
+        "citation": "Ma revendication en tant que femme c'est que ma différence soit prise en compte, que je ne sois pas contrainte de m'adapter au modèle masculin.",
+        "InformationsCles": [
             {
-                "titre" : "Ministre de la Santé",
-                "image" : "img/Logo1000Chemins.png"
+                "titre": "Ministre de la Santé",
+                "image": "img/Logo1000Chemins.png"
             },
-            
             {
-                "titre" : "Déportée juive",
-                "image" : "..."
+                "titre": "Déportée juive",
+                "image": "img/etoilejuive.png"
             },
-
             {
-                "titre" : "Légalisation avortement",
-                "image" : "..."
+                "titre": "Légalisation avortement",
+                "image": "img/balancebleu.png"
             },
-
             {
-                "titre" : "Grand-Croix de la Légion d'Honneur",
-                "image" : "..."
+                "titre": "Grand-Croix de la Légion d'Honneur",
+                "image": "img/rubanbleu.png"
             }
-
         ],
+        "Description": {
+            "titre": "Politicienne Inspirante",
+            "image": "img/cerclerose.png",
+            "bloctextes": [
+                {
+                    "Titre" : "Pourquoi",
+                    "Texte" : "Simone Veil, issue d'une famille juive, n'a que 16 ans lorsqu'elle est déportée dans le camp de concentration de Drancy, puis Auschwitz-Birkenau. Tandis que sa soeur et elle survivent au génocide juif, leurs parents et leur frère, quant-à eux n'en reviendront pas. A la fin de la guerre, Simone Veil se concentre sur ses études en droit et politique et devient, en 1970, secrétaire général du Conseil Supérieur de la Magistrature. Sous Jacques Chirac elle est nommée Ministre de la Santé."
+                },
 
-        "Description" : [
-
-            {
-                "titre" : "Politicienne Inspirante",
-                "image" : "img/politicienneinspirante.png"
-            }
+                {
+                    "Titre" : "Ses actions :",
+                    "Texte" : "En 1974, elle prononce un discours à l'Assemblée Nationale afin de proposer un projet de loi dépénalisant l'avortement. Ce texte est adopté le 29 novembre 1974 et entre en vigueur le 17 janvier 1975. Il marque la fin (ou presque) d'un long combat mené par les femmes. En 1979, elle est élue première présidente du Parlement européen au suffrage universel direct."
+                }
 
 
-        ],
+            ]
+        },
+
 
         "Biographie" : [
 
             {
-                "image" : "img/balance.png"
+                "image": "img/balance.png"
             },
 
             {
-                "image" : "img/justice.png"
+                "image": "img/marto.png"
             },
 
             {
-                "image" : "img/avortement.png"
+                "image": "img/avortement.png"
             },
 
             {
-                "titre" : "Simone Veil lors de son discours de proposition de loi relatif à l'avortement à l'Assemblée Nationale le 26/11/1974.• Crédits : AFP",
-                "image" : "img/discoursveil.png"
+                "titre": "Simone Veil lors de son discours de proposition de loi relatif à l'avortement à l'Assemblée Nationale le 26/11/1974.• Crédits : AFP",
+                "image": "img/discoursveil.png"
             },
 
             {
-                "titre" : "La carte de déportée politique de Simone Veil (1927-2017). Exposition hommage 'Madame, nous vous aimons'",
-                "image" : "img/cartedeportee.png"
-            },
-
-            {
-                "titre" : "inserer vidéo",
+                "titre": "La carte de déportée politique de Simone Veil (1927-2017). Exposition hommage 'Madame, nous vous aimons'",
+                "image": "img/cartedeportee.png"
             }
-
 
         ],
 
-        "FriseChronologique" : [
-
+        "FriseChronologique": [
             {
-                "titre" : "1942",
-                "image" : "L'avortement est puni de mort car il est considéré comme un 'crime contre la sureté de l'Etat'."
-            },
-            
-            {
-                "titre" : "1971",
-                "intitule" : "Le manifeste des 343 ('salopes') dans Le Nouvel Observateur."
+                "date": "1942",
+                "intitule": "L'avortement est puni de mort car il est considéré comme un 'crime contre la sureté de l'Etat'."
             },
 
             {
-                "titre" : "1972",
-                "intitule" : "Procès de Bobigny : une jeune fille avorte suite à un viol et se fait dénoncer par son violeur. Pour la première fois, la victime sera relaxée et l'affaire deviendra médiatique."
+                "date": "1971",
+                "intitule": "Le manifeste des 343 ('salopes') dans Le Nouvel Observateur."
             },
 
             {
-                "titre" : "1974-1975",
-                "intitutle" : "Discours de Simone Veil et légalisation de l'IVG. "
+                "date": "1972",
+                "intitule": "Procès de Bobigny : une jeune fille avorte suite à un viol et se fait dénoncer par son violeur. Pour la première fois, la victime sera relaxée et l'affaire deviendra médiatique."
             },
 
             {
-                "lienvideo" : "https://www.youtube.com/watch?v=cTAmCUgoSZ4"
+                "date": "1974-1975",
+                "intitutle": "Discours de Simone Veil et légalisation de l'IVG. "
+            },
+
+            {
+                "lienvideo": "https://www.youtube.com/watch?v=cTAmCUgoSZ4"
             }
         ]
 

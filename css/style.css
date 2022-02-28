@@ -53,6 +53,21 @@ body{
     overflow-x: scroll;
 }
 
+.container{
+  height: auto;
+  width: 100%;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px);
+}
+
+.container > div{
+  width: 100%;
+  height: auto;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
 .logo{
     margin-top: -300px;
     top: 0;
@@ -78,11 +93,16 @@ body{
 }
 
 .ligne{
-    margin-top: -600px;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: auto;
+}
+
+.chemin{
+  width: 100%;
+  height: auto;
+  margin-top: 780px;
+  position: absolute;
+  float: right;
 }
 
 /* Style des textes */

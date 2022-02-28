@@ -53,6 +53,21 @@ body{
     overflow-x: scroll;
 }
 
+.container{
+  height: auto;
+  width: 100%;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px);
+}
+
+.container > div{
+  width: 100%;
+  height: auto;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
 .logo{
     margin-top: -300px;
     top: 0;
@@ -78,11 +93,37 @@ body{
 }
 
 .ligne{
-    margin-top: -600px;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: auto;
+}
+
+.chemin{
+  width: 100%;
+  height: auto;
+  margin-top: 660px;
+  position: absolute;
+  float: right;
+  margin-left: 675px;
+}
+
+.point{
+  float: left;
+  width: 200px;
+  margin-top: 790px;
+  margin-left: 730px;
+  height: 200px;
+}
+
+.nobel{
+  margin-top: 700px;
+  margin-left: -150px;
+  float: left;
+}
+
+.marie{
+  float: left;
+  margin-top: 490px;
+  margin-left: -70px;
 }
 
 /* Style des textes */

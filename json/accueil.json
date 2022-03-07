@@ -6,7 +6,7 @@
              "annee":"1903",
              "intitule":"Prix Nobel"
           },
-          "lienimage":"..."
+          "lienimage":"imgfrise/marie.png"
        },
        {
           "nomfemme":"Joséphine Baker",
@@ -14,7 +14,7 @@
              "annee":"1939",
              "intitule":"Espionne"
           },
-          "lienimage":"..."
+          "lienimage":"imgfrise/josephine.png"
        },
        {
         "nomfemme":"Lee Miller",
@@ -22,7 +22,7 @@
            "annee":"1942",
            "intitule":"Reporter de Guerre"
         },
-        "lienimage":"..."
+        "lienimage":"imgfrise/leemiller.png"
         },
         {
         "nomfemme":"Simone de Beauvoir",
@@ -30,7 +30,7 @@
            "annee":"1949",
            "intitule":"Ecrivaine engagée"
         },
-        "lienimage":"..."
+        "lienimage":"imgfrise/simone.png"
         },
         {
             "nomfemme":"Greta Thunberg",
@@ -38,7 +38,7 @@
                "annee":"2018",
                "intitule":"Militante Ecologiste"
         },
-            "lienimage":"..."
+            "lienimage":"imgfrise/greta.png"
         }
     ],
     "datescles":[

@@ -230,19 +230,19 @@
         "InformationsCles": [
             {
                 "titre": "Personnalité de l'année 2019 (Times)",
-                "image": "img/Logo1000Chemins.png"
+                "image": "img/journal.png"
             },
             {
                 "titre": "Militante écologiste",
-                "image": "img/etoilejuive.png"
+                "image": "img/nature.png"
             },
             {
                 "titre": "Grève scolaire pour le climat",
-                "image": "img/balancebleu.png"
+                "image": "img/poing.png"
             },
             {
                 "titre": "Lutte contre le réchauffement climatique",
-                "image": "img/rubanbleu.png"
+                "image": "img/planete.png"
             },
         ],
 
@@ -268,12 +268,12 @@
 
             {
                 "titre": "Greta Thunberg discourt lors de la grève de Friday for Future à Turin le 13 décembre 2019. Crédits : Filippo MONTEFORTE / AFP",
-                "image": "img/balance.png"
+                "image": "img/gretadiscou.png"
             },
 
             {
                 "titre": "Greta Thunberg et les députés de la commission de l'environnement ont discuté de la législation européenne sur le climat.  Crédits : Parlement Européen",
-                "image": "img/marto.png"
+                "image": "img/gretadiscour.png"
             },
 
             {
@@ -283,18 +283,22 @@
 
 
             {
-                "image": "img/discoursveil.png"
+                "image": "img/pancarte.png"
             }
 
             {
-                "image": "img/discoursveil.png"
+                "image": "img/recyclable.png"
             }
 
             {
-                "image": "img/discoursveil.png"
+                "image": "img/bateau.png"
             }
 
         ],
 
     }
 }
+
+
+
+

@@ -6,10 +6,10 @@ fetch('json/accueil.json')
     console.log(dataAccueil);
 })
 
-var dataPageDetail;
+/*var dataPageDetail;
 fetch('json/pagedetail.json')
   .then(response => response.json())
   .then(data => {
     dataPageDetail = data
     console.log(dataPageDetail);
-})
+}) */

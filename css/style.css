@@ -100,7 +100,6 @@ body{
 .chemin{
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   margin-top: 660px;
   position: absolute;
   float: right;
@@ -125,11 +124,9 @@ body{
   float: left;
   margin-top: 490px;
   margin-left: -70px;
-=======
-  margin-top: 780px;
   position: absolute;
   float: right;
->>>>>>> 6d2668c2e6dd29989f0945e18c03cea5415246da
+
 }
 
 /* Style des textes */

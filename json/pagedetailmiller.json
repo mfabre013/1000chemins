@@ -1,0 +1,126 @@
+[
+    {
+        "nomfemme": "Lee Miller",
+        "datenaissance": "1907-1977",
+        "citation": "Je préfèrerais prendre une photo qu'en être une",
+        "InformationsCles": [
+            {
+                "titre": "Mannequin",
+                "image": "img/mannequin.png"
+            },
+            {
+                "titre": "Modèle de Picasso",
+                "image": "img/picasso.png"
+            },
+            {
+                "titre": "Vogue Magazine",
+                "image": "img/magazine.png"
+            },
+            {
+                "titre": "Reporter de Guerre",
+                "image": "img/camera.png"
+            },
+            {
+                "titre": "Photo dans la baignoire d'Hitler",
+                "image": "img/baignoire.png"
+            }
+        ],
+
+        "Description": {
+            "titre": "Reporter Inspirante",
+            "image": "img/cerclerose.png",
+            "bloctextes": [
+                {
+                    "Titre" : "Pourquoi",
+                    "Texte" : "Lee Miller est l’une des icônes féminines les plus remarquables du 20e siècle. Elle débute sa carrière en tant que mannequin sur les couvertures des magazines de Vogue. Passionnée par la photographie, c'est pour ce même magazine qu'elle va finalement devenir photojournaliste puis reporter de Guerre. Elle passe ainsi de figure de beauté à femme d'action, qui n'hésite pas à s'exposer en première ligne afin d'informer le monde sur l'horreur de la Seconde Guerre Mondiale."
+                },
+
+                {
+                    "Titre" : "Ses actions :",
+                    "Texte" : "À l'âge de 20 ans, elle commence sa carrière à New York et devient le mannequin vedette de Vogue. Installée à Paris, deux ans plus tard, elle  travaille des deux côtés de l’objectif pour le Vogue français. Elle réalise alors des portraits, des photographies de mode, dans la mouvance surréaliste.En 1942, elle devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. Elle photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et découvre les camps de concentration de Buchenwald et Dachau. Le 30 avril 1945, le jour même où Hitler se suicide dans son Bunker de Berlin, Lee Miller et David E. Scherman réalisent une visite de son appartement. A la nouvelle de la mort du Füher, ils décident de séjourner sur les lieux. Scherman prendra alors l'une de ses plus célèbres photos : Lee prenant un bain dans la baignoire personnelle du dictateur, un portrait de ce dernier à ses côtés."
+                }
+
+            ]
+        },
+
+
+        "Biographie" : [
+
+            {
+                "titre": "Reporter de guerre engagée"
+            },
+
+            {
+                "soustitre": "La reporter n'hésite pas à prendre des images choquantes, illustrant la réalité de la Seconde Guerre Mondiale"
+            },
+
+            {
+                "titre": "Lee Miller, David E. Scherman, Dressed for war, 1942, épreuve gélatino-argentique, © Lee Miller Archives.",
+                "image": "img/masqueparapluie.png"
+            },
+
+            {
+                "titre": "Lee Miller, 'Beaten Guards begging for mercy', Buchenwald, 1945. © Lee Miller Archives",
+                "image": "img/deuxhommes.png"
+            },
+
+            {
+                "titre": "Lee Miller, 'Pile of starved bodies', juin 1945. Publié par Vogue Etats-Unis 'Believe It', Juin 1945, page 104.",
+                "image": "img/corps.png"
+            },
+
+            {
+                "texte": "Le 30 avril 1945, au lendemain de la libération de Dachau par l'armée Américaine, Adolf Hitler et sa femme, Eva Braun, se suicident dans leur bunker de Berlin. Leurs  corps sont immédiatement brulés par de fidèles nazis afin qu'ils ne soient pas insultés par la foule. Au moment de l'annonce de la mort du Führer par la BBC, à minuit, Lee Miller et son partenaire, David E.Scherman, sont en train d'explorer son appartement à Munich. Ils décident de rester quelques jours dans le logement afin d'immortaliser l'intimité du Nazi. C'est dans ce contexte qu'est improvisée une séance photo dans la baignoire d'Hitler. Lee Miller dira dans Le Monde : 'C’était confortable, mais il y avait quelque chose de macabre à dormir sur l’oreiller d’une femme et d’un homme qui venaient de mourir, tout en se réjouissant de leur mort, si c’était bien le cas.'"
+            },
+
+            {
+                "titre": "©David E. Scherman – Lee  Miller dans la baignoire d’Hitler, Munich, Allemagne, avril 1945",
+                "image": "img/leebaignoire.png"
+            }
+        ],
+
+        "FriseChronologique": [
+            {
+                "date": "1927",
+                "intitule": "Lee Miller commence sa carrière à New York et devient le mannequin vedette de Vogue."
+            },
+
+            {
+                "date": "1929",
+                "intitule": "Lee Miller quitte l'Amérique pour Paris. Dans le Vogue français, elle est des deux côtés de l’objectif : mannequin et photographe."
+            },
+
+            {
+                "date": "1930",
+                "intitule": "Création de son propre studio photographique. Les images signées Man Ray sont en fait l’œuvre de Lee Miller."
+            },
+
+            {
+                "date": "1933",
+                "intitutle": "Le  galeriste Julien Levy présente la première exposition personnelle de Lee Miller."
+            },
+
+            {
+                "date": "1937",
+                "intitutle": "Lee M. fréquente le groupe des surréalistes et devient un modèle pour Pablo Picasso."
+            },
+
+            {
+                "date": "1940",
+                "intitutle": "Lee M. travaille à Londres pour le magazine Vogue. Elle devient  l’un des piliers du magazine."
+            },
+
+            {
+                "date": "1942",
+                "intitutle": "Lee M. devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. "
+            },
+
+            {
+                "date": "1945",
+                "intitutle": "Lee M. photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et fait découvrir l'horreur des camps de concentration de Buchenwald et Dachau."
+            }
+
+        ]
+    }
+
+]

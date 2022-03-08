@@ -1,0 +1,42 @@
+[
+    {
+       "nomfemme":"Marie Curie",
+       "datemarquante":[
+          "1903",
+          "Prix Nobel"
+       ],
+       "lienimage":"imgfrise/marie.png"
+    },
+     {
+       "nomfemme":"Joséphine Baker",
+       "datemarquante":[
+          "1939",
+          "Espionne"
+       ],
+       "lienimage":"imgfrise/josephine.png"
+    },
+    {
+     "nomfemme":"Lee Miller",
+     "datemarquante":[
+        "1942",
+        "Reporter de Guerre"
+     ],
+     "lienimage":"imgfrise/leemiller.png"
+  },
+  {
+     "nomfemme":"Simone de Beauvoir",
+     "datemarquante":[
+        "annee:1949",
+        "intitule : Ecrivaine engagée"
+     ],
+     "lienimage":"imgfrise/simone.png"
+  },
+  {
+     "nomfemme":"Greta Thunberg",
+     "datemarquante":[
+        "annee:2018",
+        "intitule : Militante Ecologiste"
+     ],
+     "lienimage":"imgfrise/greta.png"
+  }
+ ]

@@ -5,22 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta charset="UTF-8" />
         <link href="./css/style.css" rel="stylesheet" type="text/css">
-        <script src="./js/script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Knewave&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
 <body>
+    
     <div class="container">
         <div>
             <div class="logo"><img src="./img/logo1000chemins.png"  alt=""></div>
-    
-
             <div class="paragrapheAccueil">
                 <p>Votre potentiel est sans limite. Choisissez votre propre destin <img id="smile" src="img/smile.png" alt="smile"><br><br>
                     <br>
                 Inspirez-vous de ces femmes qui ont construit leur propres chemins.</p>
             </div>
-        
             <div class="ligne">
                 <img src="./img/footer.png" alt="">
             </div>
@@ -29,24 +29,231 @@
     <div>
         <div class="chemin">
             <img src="./img/chemin.png" alt="">
-
         </div>
         <div>
             <img class="point" src="./img/point.png" alt="">
         </div>
         <div>
-            <h3 class="nobel">Prix nobel
-                <br>1903
+            <h3 class="nobel" id="nobel">
+            </h3>
+            <br>
+            <br>
+            <h3 class="nobel2" id="nobelAnnee">
             </h3>
         </div>
         <div>
-            <img class="marie" src="./img/marie.png" alt="">
+            <img class="nommarie" src="img/nommarie.png" alt="">
+        </div>
+        <div>
+            <img class="marie" id="marie" src="" alt="">
+        </div>
+        <div>
+            <img src="img/pointblanc.png" class="pointBlanc" alt="">
+        </div>
+        <div>
+            <h3 class="dateCleUn" id="anneeMarie"></h3>
+            <br>
+            <br>
+            <h3 class="paragrapheDateCleUn" id="intituleMarie"></h3>
+        </div>
+        <div>
+            <img class="pointR" src="./img/point.png" alt="">
+        </div>
+        <div>
+            <h3 class="josephineAnnee" id="anneeJosephine"></h3>
+            <br>
+            <br>
+            <h3 class="josephine" id="intituleJosephine"></h3>
+        </div>
+        <div>
+            <img src="img/nomjosephine.png" class="nomjosephine" alt="">
+        </div>
+        <div>
+            <img class="josephineImage" id="josephine" src="" alt="">
+        </div>
+        <div>
+            <img class="pointR3" src="./img/point.png" alt="">
+        </div>
+        <div>
+            <h3 class="leeIntitule" id="intituleLee"></h3>
+            <br>
+            <br>
+            <h3 class="leeAnnee" id="anneeLee"></h3>
+        </div>
+        <div>
+            <a id="myBtn" href="#myModal"><img class="leeImage" id="leemiller" src="" alt=""></a>
+        </div>
+        <div>
+            <img src="img/nomlee.png" class="nomLee" alt="">
         </div>
     </div>
+</div>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 class="titre" id="titreLee"></h1>
+      <div>
+          <h3 class="dateNaissanceLee" id="dateNaissance"></h3>
+      </div>
+      <div>
+          <img class="mannequin" id="mannequin" src="" alt="">
+          <h3 id="texteMannequin"></h3>
+      </div>
+      <div>
+          <img class="picasso" id="picasso" src="" alt="">
+          <h3 id="textePicasso" class="textePicasso"></h3>
+      </div>
+      <div>
+          <img src="img/leecasque.png" alt="">
+      </div>
     </div>
-        
-    <script src="js/script.js"></script>
+  
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
     
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+        
+   <script>
+    //Fonction qui permet de lire le JSON
+    async function loadJsonFemme(){
+
+        //On lit le fichier Json et on l'enregitre  dans une variable
+        const fichier = await fetch('json/accueilcopie.json');
+        const femmes = await fichier.json();
+
+        //Positionnement de la femme cherchée dans le Json
+        var positionFemme = 0;
+
+        //On recherche dans notre fichier les femmes et on les affiche
+        for(i=0;i<5;i++){
+            //On cherche Marie Curie
+            if(femmes[i].nomfemme=="Marie Curie")
+            {
+            positionFemme = i;
+            //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
+            document.getElementById('nobel').innerHTML = femmes[positionFemme].datemarquante[1];
+            document.getElementById('nobelAnnee').innerHTML = femmes[positionFemme].datemarquante[0];
+            document.getElementById('marie').src = femmes[positionFemme].lienimage;
+            }
+            //On cherche Joséphine Baker
+            if(femmes[i].nomfemme=="Joséphine Baker")
+            {
+            positionFemme = i;
+            //document.getElementById('nomFemme2').innerHTML = femmes[positionFemme].nomfemme;
+            document.getElementById("intituleJosephine").innerHTML = femmes[positionFemme].datemarquante[1];
+            document.getElementById("anneeJosephine").innerHTML = femmes[positionFemme].datemarquante[0];
+            document.getElementById("josephine").src = femmes[positionFemme].lienimage;
+            }
+
+            if(femmes[i].nomfemme=="Lee Miller")
+            {
+            positionFemme = i;
+            document.getElementById("intituleLee").innerHTML = femmes[positionFemme].datemarquante[1];
+            document.getElementById("anneeLee").innerHTML = femmes[positionFemme].datemarquante[0];
+            document.getElementById("leemiller").src = femmes[positionFemme].lienimage;
+            }
+
+        }
+
+        
+    }
+    loadJsonFemme();
+    
+</script>
+
+<script>
+    //Fonction qui permet de lire le JSON
+    async function loadJsonDate(){
+
+        //On lit le fichier Json et on l'enregitre  dans une variable
+        const fichier = await fetch('json/datescles.json');
+        const dates = await fichier.json();
+
+        //Positionnement de la femme cherchée dans le Json
+        var positionDate = 0;
+
+        //On recherche dans notre fichier les femmes et on les affiche
+        for(i=0;i<3;i++){
+            //On cherche Marie Curie
+            if(dates[i].position=="Marie Curie")
+            {
+            positionDate = i;
+            //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
+            document.getElementById("anneeMarie").innerHTML = dates[positionDate].annee;
+            document.getElementById("intituleMarie").innerHTML = dates[positionDate].intitule;
+            }
+        }
+
+        //On affiche les données de la femme trouvée
+        
+
+        
+    }
+    loadJsonDate();
+    
+</script>
+
+<script>
+     async function loadJsonDetail(){
+
+//On lit le fichier Json et on l'enregitre  dans une variable
+const fichier = await fetch('json/pagedetailmiller.json');
+const details = await fichier.json();
+
+//Positionnement de la femme cherchée dans le Json
+var positionDetail = 0;
+
+//On recherche dans notre fichier les femmes et on les affiche
+for(i=0;i<20;i++){
+    //On cherche Marie Curie
+    
+    positionDetail = i;
+    //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
+    document.getElementById("titreLee").innerHTML = details[positionDetail].nomfemme;
+    document.getElementById("dateNaissance").innerHTML = details[positionDetail].datenaissance;
+    document.getElementById("mannequin").src = details[positionDetail].InformationsCles[0].image;
+    document.getElementById("texteMannequin").innerHTML = details[positionDetail].InformationsCles[0].titre;
+    document.getElementById("picasso").src = details[positionDetail].InformationsCles[1].image;
+    document.getElementById("textePicasso").innerHTML = details[positionDetail].InformationsCles[1].titre;
+    
+    
+}
+
+//On affiche les données de la femme trouvée
+
+
+
+}
+loadJsonDetail();
+</script>
     
     
 </body>

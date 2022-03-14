@@ -6,11 +6,19 @@
         <meta charset="UTF-8" />
         <link href="./css/style.css" rel="stylesheet" type="text/css">
         <script src="js/script.js"></script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Knewave&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
 <body>
+<<<<<<< HEAD
   <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'/>
 <div align="center">
   <a href="#" download="" class="dnbtn"></a>
@@ -19,6 +27,8 @@
   <a href="#" download="" class="dnbtn" style="left: 20%;"></a>
 </div>
 
+=======
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
 <!-- ANIMATION FEMMES ET POINTS R  -->
   <script>
     function reveal() {
@@ -104,7 +114,49 @@ revealDateCle();
             <div class="ligne">
                 <img src="./img/footer.png" alt="">
             </div>
+<<<<<<< HEAD
         </div>   
+=======
+        </div>
+    <!--<div>
+        <a href="LISEZMOI.txt" download="txt">
+            <input type="button" class="button" value="Vitrine" onclick="window.location='LISEZMOI.txt';">
+          </a>
+          <script>
+            function download(file, text) {
+              
+                //creating an invisible element
+                var element = document.createElement('a');
+                element.setAttribute('href', 
+                'data:text/plain;charset=utf-8, '
+                + encodeURIComponent(text));
+                element.setAttribute('download', file);
+              
+                // Above code is equivalent to
+                // <a href="path of file" download="file name">
+              
+                document.body.appendChild(element);
+              
+                //onClick property
+                element.click();
+              
+                document.body.removeChild(element);
+            }
+              
+            // Start file download.
+            document.getElementById("btn")
+            .addEventListener("click", function() {
+                // Generate download of hello.txt 
+                // file with some content
+                var text = document.getElementById("text").value;
+                var filename = "GFG.txt";
+              
+                download(filename, text);
+            }, false);
+          </script>
+    </div>-->
+        
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
     <div>
         <div class="chemin">
             <img src="./img/chemin.png" alt="">
@@ -236,7 +288,26 @@ revealDateCle();
             <div>
               <input type="file" id="fichier" hidden>  
             </div>
+<<<<<<< HEAD
           
+=======
+          <script>
+            document.getElementById("subject_input")
+                .addEventListener("click", function(){
+              if(document.form.subject.value == "b"){
+                document.getElementById("fichier").hidden = false;
+                document.getElementById("name_iinput").hidden = false;
+                document.getElementById("description_input").hidden = false;
+              }
+              else{
+                document.getElementById("fichier").hidden = true;
+                document.getElementById("description_input").hidden = true;
+                document.getElementById("name_iinput").hidden = true;
+
+              }
+            })
+          </script>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
           <div class="message">
             <label for="message"></label>
             <textarea name="message" placeholder="Votre message" id="message_input" cols="30" rows="5" required></textarea>
@@ -248,6 +319,7 @@ revealDateCle();
           <div class="submit">
         <button type="submit" id="myBtnFormulaire" class="form_button">Envoyer</button>
         <!--<button type="button" class="form_button" onclick="closeForm()">Fermer</button>-->
+<<<<<<< HEAD
         </div>
         <script>
           document.getElementById("subject_input")
@@ -267,6 +339,27 @@ revealDateCle();
         </script>          
         </form>
 </div>
+=======
+        </div>          
+        </form>
+</div>
+    
+<!--<div class="w3-panel w3-green w3-display-container">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h3>Envoyé avec succès!</h3>
+  <p>Un membre de notre équipe vous contactera rapidement .</p>
+</div>-->
+<!--<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>-->
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
 <!-- The Modal -->
 <div id="myModalFormulaire" class="modalFormulaire">
 
@@ -340,7 +433,11 @@ revealDateCle();
 
 <!-- MODAL FORMULAIRE -->
 
+<<<<<<< HEAD
 <!-- MODAL BIOGRAPHIE LEE MILLER  -->
+=======
+<!-- MODAL LEE MILLER --> 
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
     <div id="myModal" class="modal">
     <!-- Modal content -->
         <div class="modal-content">
@@ -348,17 +445,30 @@ revealDateCle();
             <div class="presentation">
               <div>
                 <img class="millertitre" id="millertitre" src="img/millertitre.svg" alt="">
+<<<<<<< HEAD
                 <img class="mannequin" id="mannequin" src="" alt="">
                 <p class="textemannequin" id="texteMannequin"></p>
                 <img class="picasso" id="picasso" src="" alt="">
                 <p class="textepicasso" id="textePicasso"></p>
+=======
+                <img class="mannequin" id="mannequin" src="img/mannequin.png" alt="">
+                <p class="textemannequin">Mannequin</p>
+                <img class="picasso" id="picasso" src="img/picasso.png" alt="">
+                <p class="textepicasso">Modèle de picasso</p>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
               <div>
                 <img class="leephoto" src="img/leecasque.png" alt="">
                 <img class="leerobe" src="img/leerobe.png" alt="">
+<<<<<<< HEAD
                 <img class="magazine" id="magazine" src="" alt="">
                 <p class="textemagazine">Vogue Magazine</p>
                 <h3 style="font-family: 'DM Sans', sans-serif;" id="citation" class="millercitation"></h3>
+=======
+                <img class="magazine" src="img/magazine.svg" alt="">
+                <p class="textemagazine">Vogue Magazine</p>
+                <h3 style="font-family: 'DM Sans', sans-serif;" class="millercitation">"Je préfèrerais prendre une photo qu’en être une"</h3>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
               <div>
                 <img class="camera" src="img/camera.png" alt="">
@@ -370,17 +480,28 @@ revealDateCle();
 
             <div class="biographie">
               <div >
+<<<<<<< HEAD
                 <img class="cerclerose" id="cerclerose" src="" alt="">
               </div>
               <div>
                 <p style="font-family: 'DM Sans', sans-serif;" class="titrepourquoi" id="titrePourquoi"></p>
+=======
+                <img class="cerclerose" id="cerclerose" src="img/cerclerosemiller.svg" alt="">
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="titrepourquoi">Pourquoi ?</p>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
   
               <div>
                 <p style="font-family: 'DM Sans', sans-serif;" class="textepourquoi">Lee Miller est l’une des icônes féminines les plus remarquables du 20e siècle.<br> Elle débute sa carrière en tant que mannequin sur les couvertures des magazines de Vogue.<br> Passionnée par la photographie, c'est pour ce même magazine qu'elle va finalement devenir photojournaliste<br> puis reporter de Guerre.<br> Elle passe ainsi de figure de beauté à femme d'action, qui n'hésite pas à s'exposer en première ligne<br> afin d'informer le monde sur l'horreur de la Seconde Guerre Mondiale.</p>
               </div>
               <div>
+<<<<<<< HEAD
                 <p style="font-family: 'DM Sans', sans-serif;" class="titreaction" id="titreAction"></p>
+=======
+                <p style="font-family: 'DM Sans', sans-serif;" class="titreaction">Ses actions :</p>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
               <div>
                 <p style="font-family: 'DM Sans', sans-serif;" class="texteaction">À l'âge de 20 ans, elle commence sa carrière à New York et devient le mannequin vedette de Vogue. Installée à Paris, deux ans plus tard, elle  travaille <br> des deux côtés de l’objectif pour le Vogue français. Elle réalise alors des portraits, des photographies de mode, dans la mouvance surréaliste.<br> En 1942, elle devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. Elle photographie la chute du IIIe Reich, <br> témoigne de la vie quotidienne des soldats et découvre les camps de concentration de Buchenwald et Dachau. <br> Le 30 avril 1945, le jour même où Hitler se suicide dans son Bunker de Berlin, Lee Miller et David E. Scherman réalisent une visite de son appartement. <br> A la nouvelle de la mort du Füher, ils décident de séjourner sur les lieux. Scherman prendra alors l'une de ses plus célèbres photos : Lee prenant <br> un bain dans la baignoire personnelle du dictateur, un portrait de ce dernier à ses côtés.</p>
@@ -391,6 +512,7 @@ revealDateCle();
             <div class="photo">
 
               <div>
+<<<<<<< HEAD
               <img class="titrereporterguerre" id="titrereporterguerre" src="" alt="">
               </div>
   
@@ -407,6 +529,24 @@ revealDateCle();
                 
   
                   <img class="corps" id="corps" src="" alt="">
+=======
+              <img class="titrereporterguerre" id="titrereporterguerre" src="img/titrereporterguerre.svg" alt="">
+              </div>
+  
+              <div>
+              <p style="font-family: 'DM Sans', sans-serif;" class="texte2gm">La reporter n'hésite pas à prendre des images choquantes, illustrant la réalité de la <br>Seconde Guerre Mondiale</p>
+              </div>
+  
+              <div class="alignphoto">
+              <img class="masqueparapluie" id="masqueparapluie" src="img/masqueparapluie.PNG" alt="">
+              
+  
+              
+                <img class="deuxhommes" id="deuxhommes" src="img/deuxhommes.png" alt="">
+                
+  
+                  <img class="corps" id="corps" src="img/corps.png" alt="">
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
                 </div>
   
                 <div>
@@ -425,6 +565,7 @@ revealDateCle();
   
             </div>
 
+<<<<<<< HEAD
             <div class="contenu">
               <div>
                 <img class="leeDansBaignoire"  src="img/leedanslabaignoire.svg" alt="">
@@ -434,10 +575,22 @@ revealDateCle();
               </div>
               <div>
                 <img class="leeBaignoire" id="leeBaignoire" src="" alt="">
+=======
+            <div>
+              <div>
+                <img class="leeDansBaignoire" id="titrereporterguerre" src="img/leedanslabaignoire.svg" alt="">
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="ultimePied">Ultime pied de nez à Hitler et au IIIe Reich</p>
+              </div>
+              <div>
+                <img class="leeBaignoire" src="img/leebaignoire.png" alt="">
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
               <div>
                 <img class="friseVertical" src="img/friseVertical.svg" alt="">
               </div>
+<<<<<<< HEAD
               
               <div>
                 <p style="font-family: 'DM Sans', sans-serif;" class="piedDePhotoLee">©David E. Scherman – Lee  Miller dans la baignoire <br> d’Hitler, Munich, Allemagne, avril 1945</p>
@@ -522,10 +675,36 @@ revealDateCle();
               </div>
               <div>
                 <p  class="texteAnneeHuitFV" style="font-family: 'DM Sans', sans-serif;">Lee Miller commence sa carrière à New York et devient le mannequin vedette de Vogue.</p>
+=======
+              <div>
+<<<<<<< HEAD
+                <img class="pointRHorizontal" src="img/pointRHorizontal.svg" alt="">
+              </div>
+              <div>
+                <h3 class="anneeUnFV">1945</h3>
+              </div>
+              <div>
+                <p class="">Lee M. photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et fait découvrir l'horreur des camps de concentration de Buchenwald et Dachau.</p>
+              </div>
+              <div>
+=======
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
+                <p class="piedDePhotoLee">©David E. Scherman – Lee  Miller dans la baignoire <br> d’Hitler, Munich, Allemagne, avril 1945</p>
+              </div>
+              <div>
+                <p class="texteLee">Le 30 avril 1945, au lendemain de la libération de Dachau par l'armée Américaine, Adolf Hitler <br> et sa femme, Eva Braun,  se suicident dans leur bunker de Berlin. Leurs  corps sont immédiatement <br> brulés par de fidèles nazis afin qu'ils ne soient pas insultés par la foule. </p>
+                <br>
+                <p class="texteLee">Au moment de l'annonce de la mort du Führer par la BBC, à minuit, Lee Miller et son partenaire, <br> David E.Scherman, sont en train d'explorer son appartement à Munich. Ils décident de rester quelques <br> jours dans le logement afin d'immortaliser l'intimité du Nazi. C'est dans ce contexte qu'est improvisée une  <br> photo "dans la baignoire d'Hitler".</p>
+                <br>
+                <p class="texteLee">Lee Meeler dira dans Le Monde :</p>
+                <br>
+                <p class="texteLee">"C’était confortable, mais il y avait quelque chose de macabre à dormir sur l’oreiller d’une femme et <br> d’un homme qui venaient de mourir, tout en se réjouissant de leur mort, si c’était bien le cas."</p>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
               </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
     <script>
       async function loadJsonDetail(){
@@ -584,6 +763,8 @@ revealDateCle();
  }
  loadJsonDetail();
  </script>
+=======
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
 
   <script>
     // Get the modal
@@ -611,9 +792,15 @@ revealDateCle();
         modal.style.display = "none";
       }
     }
+
+
     </script>
+<<<<<<< HEAD
 <!-- MODAL BIOGRAPHIE LEE MILLER  -->
 
+=======
+<!-- MODAL LEE MILLER --> 
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
 
 
 
@@ -749,6 +936,36 @@ revealDateCle();
 </script>
 
 
+<<<<<<< HEAD
+=======
+//Positionnement de la femme cherchée dans le Json
+var positionDetail = 0;
+
+//On recherche dans notre fichier les femmes et on les affiche
+for(i=0;i<20;i++){
+    //On cherche Marie Curie
+    
+    positionDetail = i;
+    //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
+    document.getElementById("titreLee").innerHTML = details[positionDetail].nomfemme;
+    document.getElementById("dateNaissance").innerHTML = details[positionDetail].datenaissance;
+    document.getElementById("mannequin").src = details[positionDetail].InformationsCles[0].image;
+    document.getElementById("texteMannequin").innerHTML = details[positionDetail].InformationsCles[0].titre;
+    document.getElementById("picasso").src = details[positionDetail].InformationsCles[1].image;
+    document.getElementById("textePicasso").innerHTML = details[positionDetail].InformationsCles[1].titre;
+	
+    
+    
+}
+
+//On affiche les données de la femme trouvée
+
+
+
+}
+loadJsonDetail();
+</script>
+>>>>>>> 22ca2f2d06a56227cfb0fdc9111ca620c17e4fe0
     
     
 </body>

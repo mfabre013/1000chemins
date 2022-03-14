@@ -272,6 +272,28 @@ animation-fill-mode: forwards;*/
 }
 .activeNoms.fade-left-noms {
   animation: fade-left 1s ease-in;
+<<<<<<< HEAD
+=======
+}
+.activeNoms.fade-right-noms {
+  animation: fade-right 1s ease-in;
+}
+
+/* ------- ANIMATION NOMS FEMMES --------- */
+
+/* ----- ANIMATION DATE CLE ----- */
+
+.revealDateCle{
+  position: relative;
+  
+  opacity: 0;
+  transition: 3s all ease;
+}
+
+.revealDateCle.activeDateCle{
+  
+  opacity: 1;
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
 }
 .activeNoms.fade-right-noms {
   animation: fade-right 1s ease-in;
@@ -292,6 +314,10 @@ animation-fill-mode: forwards;*/
   
   opacity: 1;
 }
+
+
+/* ----- ANIMATION DATE CLE ----- */
+
 
 
 /* ----- ANIMATION DATE CLE ----- */
@@ -948,6 +974,7 @@ font-size: 80%;
   position: relative;
   top: 4%;
   top: 30%;
+<<<<<<< HEAD
 }
 
 .textebaignoire {
@@ -966,6 +993,26 @@ font-size: 80%;
   bottom: 22%;
 }
 
+=======
+}
+
+.textebaignoire {
+  position: relative;
+  color: #ef2c5f;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: x-large;
+  top: 30%;
+  right: 20%;
+}
+
+.picasso {
+  position: relative;
+  left: 70%;
+  bottom: 22%;
+}
+
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
 .mannequin {
   position: relative;
   right: -3%;
@@ -1117,7 +1164,11 @@ font-size: 80%;
   text-align: center;
   position: relative;
   font-size: 130%;
+<<<<<<< HEAD
   left: -884px;
+=======
+  left: -881px;
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
   top: 580px;
   color: white;
   z-index: 1;
@@ -1132,6 +1183,7 @@ font-size: 80%;
   z-index: 0;
 }
 
+<<<<<<< HEAD
 .pointRHorizontal{
   position: relative;
   float: left;
@@ -1159,6 +1211,8 @@ font-size: 80%;
   z-index: 1;
 }
 
+=======
+>>>>>>> 43b4091db2aa8796ca3dc4615072c201b830ed2f
 .ultimePied {
   position: relative;
   color: #ef2c5f;

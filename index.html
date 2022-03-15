@@ -5,114 +5,604 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta charset="UTF-8" />
         <link href="./css/style.css" rel="stylesheet" type="text/css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/script.js"></script>
-        
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Knewave&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
 <body>
+  
+<!-- ANIMATION FEMMES ET POINTS R  -->
+<!-- Cette animation utilise une fonction en js qui selectionne la classe
+de l'element HTML, et l'ajoute une classe appelé active qui permet
+d'afficher l'element et de le masquer.
+A la fin, en dehors de la fonction, on ajoute un event pour definir que
+la fonction soit executé en scrollant. -->
+<script>
     
-    <div class="container">
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+reveal();
+  </script>
+    
+<!-- ANIMATION FEMMES ET POINTS R  -->
+
+<!-- ANIMATION NOMS DES FEMMES  -->
+<!-- Cette animation fonctionne pareil que la fonction ci-dessous -->
+<script>
+  function revealNoms() {
+var revealsNoms = document.querySelectorAll(".revealNoms");
+
+for (var i = 0; i < revealsNoms.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = revealsNoms[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    revealsNoms[i].classList.add("activeNoms");
+  } else {
+    revealsNoms[i].classList.remove("activeNoms");
+  }
+}
+}
+
+window.addEventListener("scroll", revealNoms);
+revealNoms();
+</script>
+
+<!-- ANIMATION NOMS DES FEMMES  -->
+
+<!-- ANIMATION DATE CLE -->
+<!-- Cette animation fonctionne pareil que la fonction ci-dessous -->
+<script>
+  function revealDateCle() {
+var revealsDateCle = document.querySelectorAll(".revealDateCle");
+
+for (var i = 0; i < revealsDateCle.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = revealsDateCle[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    revealsDateCle[i].classList.add("activeDateCle");
+  } else {
+    revealsDateCle[i].classList.remove("activeDateCle");
+  }
+}
+}
+
+window.addEventListener("scroll", revealDateCle);
+revealDateCle();
+</script>
+
+<!-- ANIMATION DATE CLE -->
+<!-- Ce conteneur contient tous les elements que l'on trouve sur la page
+d'accueil, en accedant au site web -->
+<div class="container">
+   <!-- Bouton pour telecharger le projet
+  Le design du bouton est fait avec du css seulement, et
+  pour faire le telechargement on a utilisé la fonction download
+  qui fait partie de HTML
+  -->
+  <div class="conteneurButton"><div class="btn"><a href="" onclick="window.open('1000chemins.zip')">Telecharger</a></div></div> 
         <div>
             <div class="logo"><img src="./img/logo1000chemins.png"  alt=""></div>
             <div class="paragrapheAccueil">
                 <p>Votre potentiel est sans limite. Choisissez votre propre destin <img id="smile" src="img/smile.png" alt="smile"><br><br>
                     <br>
-                Inspirez-vous de ces femmes qui ont construit leur propres chemins.</p>
+                Inspirez-vous de ces femmes qui ont construit leurs propres chemins.</p>
             </div>
             <div class="ligne">
                 <img src="./img/footer.png" alt="">
             </div>
-        </div>
-        
+        </div>   
     <div>
         <div class="chemin">
             <img src="./img/chemin.png" alt="">
         </div>
-        <div>
+        <div class="reveal">
             <img class="point" src="./img/point.png" alt="">
         </div>
         <div>
-            <h3 class="nobel" id="nobel">
+            <h3 class="nobel reveal" id="nobel">
             </h3>
-            <br>
-            <br>
-            <h3 class="nobel2" id="nobelAnnee">
+            <h3 class="nobel2 reveal" id="nobelAnnee">
             </h3>
         </div>
         <div>
-            <img class="nommarie" src="img/nommarie.png" alt="">
+            <img class="nommarie revealNoms" src="img/nommarie.png" alt="">
         </div>
         <div>
-            <img class="marie" id="marie" src="" alt="">
+            <img class="marie reveal" id="marie" src="" alt="">
         </div>
         <div>
-            <img src="img/pointblanc.png" class="pointBlanc" alt="">
+            <a id="myBtnDate" href="#myModalDate"><img src="img/pointblanc.png" class="pointBlanc revealDateCle" alt=""></a>
         </div>
         <div>
-            <h3 class="dateCleUn" id="anneeMarie"></h3>
-            <br>
-            <br>
-            <h3 class="paragrapheDateCleUn" id="intituleMarie"></h3>
+            <h3 class="dateCleUn revealDateCle" id="anneeMarie"></h3>
+            
+            <h3 class="paragrapheDateCleUn revealDateCle" id="intituleMarie"></h3>
         </div>
         <div>
-            <img class="pointR" src="./img/point.png" alt="">
+            <img class="pointR reveal" src="./img/point.png" alt="">
         </div>
         <div>
-            <h3 class="josephineAnnee" id="anneeJosephine"></h3>
-            <br>
-            <br>
-            <h3 class="josephine" id="intituleJosephine"></h3>
+            <h3 class="josephineAnnee reveal" id="anneeJosephine"></h3>
+            
+            <h3 class="josephine reveal" id="intituleJosephine"></h3>
         </div>
         <div>
-            <img src="img/nomjosephine.png" class="nomjosephine" alt="">
+            <img src="img/nomjosephine.png" class="nomjosephine revealNoms" alt="">
         </div>
         <div>
-            <img class="josephineImage" id="josephine" src="" alt="">
+            <img class="josephineImage reveal" id="josephine" src="" alt="">
         </div>
         <div>
-            <img class="pointR3" src="./img/point.png" alt="">
+            <img class="pointR3 reveal" src="./img/point.png" alt="">
         </div>
         <div>
-            <h3 class="leeIntitule" id="intituleLee"></h3>
-            <br>
-            <br>
-            <h3 class="leeAnnee" id="anneeLee"></h3>
+            <h3 class="leeIntitule reveal" id="intituleLee"></h3>
+            
+            <h3 class="leeAnnee reveal" id="anneeLee"></h3>
         </div>
         <div>
-            <a id="myBtn" href="#myModal"><img class="leeImage" id="leemiller" src="" alt=""></a>
+            <a id="myBtn" href="#myModal"><img class="leeImage reveal" id="leemiller" src="" alt=""></a>
         </div>
         <div>
-            <img src="img/nomlee.png" class="nomLee" alt="">
+            <img src="img/nomlee.png" class="nomLee revealNoms" alt="">
+        </div>
+        
+    </div>
+    <div>
+        <div class="cheminT">
+            <img src="./img/chemin.png" alt="">
+        </div>
+        <div>
+          <img src="img/pointblanc.png" class="pointBlancDateCleDeux revealDateCle" alt="">
+        </div>
+        <div>
+          <h3 class="dateCleDeux revealDateCle">1945</h3>
+          
+          <h3 class="paragrapheDateCleDeux revealDateCle">Droit de vote pour les femmes.</h3>
+      </div>
+        <div>
+            <img class="femmes" src="./img/femmes.svg" alt="">
+        </div>
+        <div>
+            <img class="pointRQ" src="img/point.png" alt="">
+        </div>
+        <div>
+            <h3 class="aujourdhui">Aujourd'hui</h3>
+        </div>
+        <div>
+            <a id="myBtnForm" href="#myModalForm"><h3 class="formulaireAcces">Contactez-nous</h3></a>
+        </div>
+        <div>
+            <img class="pointR5" src="img/point.png" alt="">
+        </div>
+        <div class="milChemins">
+            <h3 style="text-align: center; margin-left: 10%; font-family: 'DM Sans', sans-serif;">1000 chemins pour </h3>
+            <h3 style="text-align: center; font-family: 'DM Sans', sans-serif;">devenir qui tu veux être</h3>
+        </div>
+        <div>
+            <h3 class="demain">Demain</h3>
         </div>
     </div>
+
+
+
+
+</div>
+<!-- Ce modal contient le formulaire de contact qui s'affiche sous la frise
+et tous les elements de la page -->
+<!-- MODAL FORMULAIRE -->
+<div id="myModalForm" class="modalForm">
+    <!-- Modal content -->
+        <div class="modal-content-form">
+            <span class="closeForm">&times;</span>
+<div class="form-popup" id="myForm">
+  <form action="#" method="post" name="form" id="contact_form"> <!-- // Début du formulaire -->
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="Nom" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="Adresse mail" name="email" id="email_input" required>
+          </div>
+          
+          <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Objet" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Objet</option>
+              <option value="a"> Demande d'informations</option>
+              <option class="ajout" value="b"> Ajouter des informations</option>
+              <option value="c"> Autres </option>
+            </select>
+          </div>
+          <input type="file" id="fichier" hidden>
+          <br>
+            <div class="name">
+              <label for="name"></label>
+              <input type="text" placeholder="Nom de la femme" name="name" id="name_iinput" hidden required>
+            </div>
+            <div>
+              <input type="file" id="fichier" hidden>  
+            </div>
+          
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Votre message" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="description">
+            <label for="description"></label>
+            <textarea name="description" placeholder="Description de la femme" hidden id="description_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+        <button type="submit" id="myBtnFormulaire" class="form_button">Envoyer</button>
+        <!--<button type="button" class="form_button" onclick="closeForm()">Fermer</button>-->
+        </div>
+
+        <!-- Ce script permet d'afficher et de masquer quelques champs
+        à remplir sur le formulaire -->
+        <script>
+          document.getElementById("subject_input")
+              .addEventListener("click", function(){
+            if(document.form.subject.value == "b"){
+              document.getElementById("fichier").hidden = false;
+              document.getElementById("name_iinput").hidden = false;
+              document.getElementById("description_input").hidden = false;
+            }
+            else{
+              document.getElementById("fichier").hidden = true;
+              document.getElementById("description_input").hidden = true;
+              document.getElementById("name_iinput").hidden = true;
+
+            }
+          })
+        </script>          
+        </form>
+</div>
+<!-- Ce modal est un message qui apparait quand l'utilisateur remplit
+le formulaire et l'envoit -->
+<!-- The Modal -->
+<div id="myModalFormulaire" class="modalFormulaire">
+
+  <!-- Modal content -->
+  <div class="modal-content-formulaire">
+    <span class="closeFormulaire">&times;</span>
+    <H3>Envoyé avec succès !</H3>
+    <p> Nous nous recontactons rapidement.</p>
+  </div>
+  <!-- Ce script permet d'afficher et de masquer le modal -->
+  <script>
+    // Get the modal
+    var modalFormulaire = document.getElementById("myModalFormulaire");
+    
+    // Get the button that opens the modal
+    var btnFormulaire = document.getElementById("myBtnFormulaire");
+    
+    // Get the <span> element that closes the modal
+    var spanFormulaire = document.getElementsByClassName("closeFormulaire")[0];
+    
+    // When the user clicks the button, open the modal 
+    btnFormulaire.onclick = function() {
+      modalFormulaire.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spanFormulaire.onclick = function() {
+      modalFormulaire.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalFormulaire) {
+        modalFormulaire.style.display = "none";
+      }
+    }
+    </script>
+
 </div>
 
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h1 class="titre" id="titreLee"></h1>
-      <div>
-          <h3 class="dateNaissanceLee" id="dateNaissance"></h3>
-      </div>
-      <div>
-          <img class="mannequin" id="mannequin" src="" alt="">
-          <h3 id="texteMannequin"></h3>
-      </div>
-      <div>
-          <img class="picasso" id="picasso" src="" alt="">
-          <h3 id="textePicasso" class="textePicasso"></h3>
-      </div>
-      <div>
-          <img src="img/leecasque.png" alt="">
-      </div>
+        </div>
     </div>
-  
-  </div>
+<!-- Ce script permet d'afficher et de masquer le formulaire -->
+    <script>
+        // Get the modal
+        var modalForm = document.getElementById("myModalForm");
+        
+        // Get the button that opens the modal
+        var btnForm = document.getElementById("myBtnForm");
+        
+        // Get the <span> element that closes the modal
+        var spanForm = document.getElementsByClassName("closeForm")[0];
+        
+        // When the user clicks the button, open the modal 
+        btnForm.onclick = function() {
+          modalForm.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        spanForm.onclick = function() {
+          modalForm.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modalForm) {
+            modalForm.style.display = "none";
+          }
+        }
+    </script>
 
+
+<!-- MODAL FORMULAIRE -->
+<!-- Ce modal contient la biographie de Lee Miller et fonctionne
+completement pareil aux autres -->
+<!-- MODAL BIOGRAPHIE LEE MILLER  -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="presentation">
+              <div>
+                <img class="millertitre" id="millertitre" src="img/millertitre.svg" alt="">
+                <img class="mannequin" id="mannequin" src="" alt="">
+                <p class="textemannequin" id="texteMannequin"></p>
+                <img class="picasso" id="picasso" src="" alt="">
+                <p class="textepicasso" id="textePicasso"></p>
+              </div>
+              <div>
+                <img class="leephoto" src="img/leecasque.png" alt="">
+                <img class="leerobe" src="img/leerobe.png" alt="">
+                <img class="magazine" id="magazine" src="" alt="">
+                <p class="textemagazine">Vogue Magazine</p>
+                <h3 style="font-family: 'DM Sans', sans-serif;" id="citation" class="millercitation"></h3>
+              </div>
+              <div>
+                <img class="camera" src="img/camera.png" alt="">
+                <p class="cameratexte">Reporter de guerre</p>
+                <img class="baignoire" src="img/baignoire.png" alt="">
+                <p class="textebaignoire">Photo dans la baignoire d'Hitler</p>
+              </div>
+            </div>
+
+            <div class="biographie">
+              <div >
+                <img class="cerclerose" id="cerclerose" src="" alt="">
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="titrepourquoi" id="titrePourquoi"></p>
+              </div>
+  
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="textepourquoi">Lee Miller est l’une des icônes féminines les plus remarquables du 20e siècle.<br> Elle débute sa carrière en tant que mannequin sur les couvertures des magazines de Vogue.<br> Passionnée par la photographie, c'est pour ce même magazine qu'elle va finalement devenir photojournaliste<br> puis reporter de Guerre.<br> Elle passe ainsi de figure de beauté à femme d'action, qui n'hésite pas à s'exposer en première ligne<br> afin d'informer le monde sur l'horreur de la Seconde Guerre Mondiale.</p>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="titreaction" id="titreAction"></p>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteaction">À l'âge de 20 ans, elle commence sa carrière à New York et devient le mannequin vedette de Vogue. Installée à Paris, deux ans plus tard, elle  travaille <br> des deux côtés de l’objectif pour le Vogue français. Elle réalise alors des portraits, des photographies de mode, dans la mouvance surréaliste.<br> En 1942, elle devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. Elle photographie la chute du IIIe Reich, <br> témoigne de la vie quotidienne des soldats et découvre les camps de concentration de Buchenwald et Dachau. <br> Le 30 avril 1945, le jour même où Hitler se suicide dans son Bunker de Berlin, Lee Miller et David E. Scherman réalisent une visite de son appartement. <br> A la nouvelle de la mort du Füher, ils décident de séjourner sur les lieux. Scherman prendra alors l'une de ses plus célèbres photos : Lee prenant <br> un bain dans la baignoire personnelle du dictateur, un portrait de ce dernier à ses côtés.</p>
+              </div>
+  
+            </div>
+
+            <div class="photo">
+
+              <div>
+              <img class="titrereporterguerre" id="titrereporterguerre" src="" alt="">
+              </div>
+  
+              <div>
+              <p style="font-family: 'DM Sans', sans-serif;" id="soustitre" class="texte2gm">La reporter n'hésite pas à prendre des images choquantes, illustrant la réalité de la <br>Seconde Guerre Mondiale</p>
+              </div>
+  
+              <div class="alignphoto">
+              <img class="masqueparapluie" id="masqueparapluie" src="" alt="">
+              
+  
+              
+                <img class="deuxhommes" id="deuxhommes" src="" alt="">
+                
+  
+                  <img class="corps" id="corps" src="" alt="">
+                </div>
+  
+                <div>
+                <p style="font-family: 'DM Sans', sans-serif; top: 30px;" class="textephoto1">Lee Miller, David E. Scherman, Dressed for war, 1942, épreuve gélatino-argentique, © Lee Miller Archives.</p>
+                </div>
+  
+                <div>
+                  <p style="font-family: 'DM Sans', sans-serif; top: 130px;" class="textephoto2">Lee Miller,<br> "Beaten Guards begging for mercy",<br> Buchenwald, 1945.<br> © Lee Miller Archives</p>
+                  </div>
+  
+                  <div>
+                    <p style="font-family: 'DM Sans', sans-serif; top: 30px;" class="textephoto3">Lee Miller, "Pile of starved bodies", juin 1945.<br>© Publié par Vogue Etats-Unis<br> 'Believe It', Juin 1945,<br> page 104.</p>
+                  </div>
+  
+  
+  
+            </div>
+
+            <div class="contenu">
+              <div>
+                <img class="leeDansBaignoire"  src="img/leedanslabaignoire.svg" alt="">
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" id="ultime" class="ultimePied"></p>
+              </div>
+              <div>
+                <img class="leeBaignoire" id="leeBaignoire" src="" alt="">
+              </div>
+              <div>
+                <img class="friseVertical" src="img/friseVertical.svg" alt="">
+              </div>
+              
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="piedDePhotoLee">©David E. Scherman – Lee  Miller dans la baignoire <br> d’Hitler, Munich, Allemagne, avril 1945</p>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteLee">Le 30 avril 1945, au lendemain de la libération de Dachau par l'armée Américaine, Adolf Hitler <br> et sa femme, Eva Braun,  se suicident dans leur bunker de Berlin. Leurs  corps sont immédiatement <br> brulés par de fidèles nazis afin qu'ils ne soient pas insultés par la foule. </p>
+                <br>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteLee">Au moment de l'annonce de la mort du Führer par la BBC, à minuit, Lee Miller et son partenaire, <br> David E.Scherman, sont en train d'explorer son appartement à Munich. Ils décident de rester quelques <br> jours dans le logement afin d'immortaliser l'intimité du Nazi. C'est dans ce contexte qu'est improvisée une  <br> photo "dans la baignoire d'Hitler".</p>
+                <br>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteLee">Lee Miller dira dans Le Monde :</p>
+                <br>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteLee">"C’était confortable, mais il y avait quelque chose de macabre à dormir sur l’oreiller d’une femme et <br> d’un homme qui venaient de mourir, tout en se réjouissant de leur mort, si c’était bien le cas."</p>
+              </div>
+              <div>
+                <img class="pointRHorizontal" id="pointRHorizontal" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeUnFV" id="anneeUnFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeUnFV">Lee M. photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et fait découvrir l'horreur des camps de concentration de Buchenwald et Dachau.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalD" id="pointRHorizontalD" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeDeuxFV" id="anneeDeuxFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeDeuxFV">Lee M. devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalT" id="pointRHorizontalT" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeTroisFV" id="anneeTroisFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeTroisFV">Lee M. travaille à Londres pour le magazine Vogue. Elle devient  l’un des piliers du magazine.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalQ" id="pointRHorizontalQ" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeQuatreFV" id="anneeQuatreFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeQuatreFV">Lee M. fréquente le groupe des surréalistes et devient un modèle pour Pablo Picasso.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalC" id="pointRHorizontalC" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeCinqFV" id="anneeCinqFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeCinqFV">Le  galeriste Julien Levy présente la première exposition personnelle de Lee Miller.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalS" id="pointRHorizontalS" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeSixFV" id="anneeSixFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeSixFV">Création de son propre studio photographique. Les images signées Man Ray sont en fait l’œuvre de Lee Miller.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalSept" id="pointRHorizontalSept" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeSeptFV" id="anneeSeptFV"></h3>
+              </div>
+              <div>
+                <p style="font-family: 'DM Sans', sans-serif;" class="texteAnneeSeptFV">Lee Miller quitte l'Amérique pour Paris. Dans le Vogue français, elle est des deux côtés de l’objectif : mannequin et photographe.</p>
+              </div>
+              <div>
+                <img class="pointRHorizontalH" id="pointRHorizontalH" src="" alt="">
+              </div>
+              <div>
+                <h3 class="anneeHuitFV" id="anneeHuitFV"></h3>
+              </div>
+              <div>
+                <p  class="texteAnneeHuitFV" style="font-family: 'DM Sans', sans-serif;">Lee Miller commence sa carrière à New York et devient le mannequin vedette de Vogue.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+<!-- Ce script permet d'établir une conexion entre le fichier json qui
+contient tous les données utilisés pour la biographie de Lee Miller
+et de les afficher dans son espace correspondant -->
+    <script>
+      async function loadJsonDetail(){
+ 
+ //On lit le fichier Json et on l'enregitre  dans une variable
+ const fichier = await fetch('json/pagedetailmiller.json');
+ const details = await fichier.json();
+ 
+ //Positionnement de la femme cherchée dans le Json
+ var positionDetail = 0;
+ 
+ //On recherche dans notre fichier les femmes et on les affiche
+ for(i=0;i<20;i++){
+     //On cherche Marie Curie
+     
+     positionDetail = i;
+     //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
+     document.getElementById("citation").innerHTML = details[positionDetail].citation;
+     document.getElementById("mannequin").src = details[positionDetail].InformationsCles[0].image;
+     document.getElementById("texteMannequin").innerHTML = details[positionDetail].InformationsCles[0].titre;
+     document.getElementById("picasso").src = details[positionDetail].InformationsCles[1].image;
+     document.getElementById("textePicasso").innerHTML = details[positionDetail].InformationsCles[1].titre;
+     document.getElementById("magazine").src = details[positionDetail].InformationsCles[2].image;
+     document.getElementById("cerclerose").src = details[positionDetail].imageCercle;
+     document.getElementById("titrePourquoi").innerHTML = details[positionDetail].bloctextes[0].Titre;
+     document.getElementById("titreAction").innerHTML = details[positionDetail].bloctextes[1].Titre;
+     document.getElementById("titrereporterguerre").src = details[positionDetail].Biographie[0].titre;
+     document.getElementById("masqueparapluie").src = details[positionDetail].Biographie[2].image;
+     document.getElementById("deuxhommes").src = details[positionDetail].Biographie[3].image;
+     document.getElementById("corps").src = details[positionDetail].Biographie[4].image;
+     document.getElementById("leeBaignoire").src = details[positionDetail].Biographie[6].image;
+     document.getElementById("ultime").innerHTML = details[positionDetail].Biographie[7].soustitre;
+     document.getElementById("pointRHorizontal").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalD").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalT").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalQ").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalC").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalS").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalSept").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("pointRHorizontalH").src = details[positionDetail].FriseChronologique[0].image;
+     document.getElementById("anneeHuitFV").innerHTML = details[positionDetail].FriseChronologique[0].date;
+     document.getElementById("anneeSeptFV").innerHTML = details[positionDetail].FriseChronologique[1].date;
+     document.getElementById("anneeSixFV").innerHTML = details[positionDetail].FriseChronologique[2].date;
+     document.getElementById("anneeCinqFV").innerHTML = details[positionDetail].FriseChronologique[3].date;
+     document.getElementById("anneeQuatreFV").innerHTML = details[positionDetail].FriseChronologique[4].date;
+     document.getElementById("anneeTroisFV").innerHTML = details[positionDetail].FriseChronologique[5].date;
+     document.getElementById("anneeDeuxFV").innerHTML = details[positionDetail].FriseChronologique[6].date;
+     document.getElementById("anneeUnFV").innerHTML = details[positionDetail].FriseChronologique[7].date;
+
+
+
+     
+ }
+ 
+ //On affiche les données de la femme trouvée
+ }
+ loadJsonDetail();
+ </script>
+<!-- Ce script permet d'afficher le modal qui contient la biographie
+de Lee Miller -->
   <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -140,7 +630,62 @@
       }
     }
     </script>
-        
+<!-- MODAL BIOGRAPHIE LEE MILLER  -->
+
+<!-- Ce modal contient l'information de la prermiére date clé que 
+l'on trouve sur la frise -->
+<!-- MODAL DATE CLE  -->
+<div id="myModalDate" class="modalDate">
+<!-- Modal content -->
+<div class="modal-content-date">
+  <span class="closeDate">&times;</span>
+  <div class="i"><img src="img/i.svg" alt=""></div>
+  <p style="text-align: justify; margin-bottom: 5%; font-weight: bold; font-family: 'DM Sans', sans-serif;">La loi du 18 février 1938 permet à la femme mariée d'agir seule sans l'autorisation du mari et l'autorise à exercer une profession non commerciale.</p>
+  <p style="text-align: justify;  margin-bottom: 5%; font-weight: bold; font-family: 'DM Sans', sans-serif;">Cette loi de 1938 a marqué le début d'une série de lois amenant, petit à petit, à l'émancipation totale de la femme : </p>
+  <ul style="text-align: justify; list-style: circle; margin-left: 10%; font-weight: bold; font-family: 'DM Sans', sans-serif;">
+      <li>De nouveaux droits.</li>
+      <li>Ouvrir un compte en banque.</li>
+      <li>Conclure un contrat de travail.</li>
+      <li>Passer des contrats pour ses biens propres.</li>
+      <li>S’inscrire dans des facultés.</li>
+      <li>Avoir une carte d’identité et un passeport.</li>
+  </ul>
+</div>
+
+</div>
+<!-- Ce script permet d'afficher et de masquer le modal -->
+<script>
+  
+    // Get the modal
+    var modalDate = document.getElementById("myModalDate");
+    
+    // Get the button that opens the modal
+    var btnDate = document.getElementById("myBtnDate");
+    
+    // Get the <span> element that closes the modal
+    var spanDate = document.getElementsByClassName("closeDate")[0];
+    
+    // When the user clicks the button, open the modal 
+    btnDate.onclick = function() {
+      modalDate.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spanDate.onclick = function() {
+      modalDate.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalDate) {
+        modalDate.style.display = "none";
+      }
+    }
+</script>
+<!-- MODAL DATE CLE  -->
+     <!-- Ce script permet de faire la connexion entre le fichier
+    Json qui contient l'information des femmes et de l'afficher
+  sur le site -->
    <script>
     //Fonction qui permet de lire le JSON
     async function loadJsonFemme(){
@@ -152,7 +697,7 @@
         //Positionnement de la femme cherchée dans le Json
         var positionFemme = 0;
 
-        //On recherche dans notre fichier les femmes et on les affiche
+        //On recherche dans notre fichier l'information et on les affiche
         for(i=0;i<5;i++){
             //On cherche Marie Curie
             if(femmes[i].nomfemme=="Marie Curie")
@@ -188,7 +733,8 @@
     loadJsonFemme();
     
 </script>
-
+<!-- Ce script permet de recuperer l'information sur la date clé
+et de l'afficher sur le site -->
 <script>
     //Fonction qui permet de lire le JSON
     async function loadJsonDate(){
@@ -197,10 +743,10 @@
         const fichier = await fetch('json/datescles.json');
         const dates = await fichier.json();
 
-        //Positionnement de la femme cherchée dans le Json
+        //Positionnement de la date cherchée dans le Json
         var positionDate = 0;
 
-        //On recherche dans notre fichier les femmes et on les affiche
+        //On recherche dans notre fichier l'information et on l'affiche
         for(i=0;i<3;i++){
             //On cherche Marie Curie
             if(dates[i].position=="Marie Curie")
@@ -221,40 +767,5 @@
     
 </script>
 
-<script>
-     async function loadJsonDetail(){
-
-//On lit le fichier Json et on l'enregitre  dans une variable
-const fichier = await fetch('json/pagedetailmiller.json');
-const details = await fichier.json();
-
-//Positionnement de la femme cherchée dans le Json
-var positionDetail = 0;
-
-//On recherche dans notre fichier les femmes et on les affiche
-for(i=0;i<20;i++){
-    //On cherche Marie Curie
-    
-    positionDetail = i;
-    //document.getElementById('nomFemme1').innerHTML = femmes[positionFemme].nomfemme;
-    document.getElementById("titreLee").innerHTML = details[positionDetail].nomfemme;
-    document.getElementById("dateNaissance").innerHTML = details[positionDetail].datenaissance;
-    document.getElementById("mannequin").src = details[positionDetail].InformationsCles[0].image;
-    document.getElementById("texteMannequin").innerHTML = details[positionDetail].InformationsCles[0].titre;
-    document.getElementById("picasso").src = details[positionDetail].InformationsCles[1].image;
-    document.getElementById("textePicasso").innerHTML = details[positionDetail].InformationsCles[1].titre;
-    
-    
-}
-
-//On affiche les données de la femme trouvée
-
-
-
-}
-loadJsonDetail();
-</script>
-    
-    
 </body>
 </html>

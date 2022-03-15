@@ -3,6 +3,8 @@
         "nomfemme": "Lee Miller",
         "datenaissance": "1907-1977",
         "citation": "Je préfèrerais prendre une photo qu'en être une",
+        "titre": "Reporter Inspirante",
+        "imageCercle": "img/cerclerosemiller.svg",
         "InformationsCles": [
             {
                 "titre": "Mannequin",
@@ -14,10 +16,10 @@
             },
             {
                 "titre": "Vogue Magazine",
-                "image": "img/magazine.png"
+                "image": "img/magazine.svg"
             },
             {
-                "titre": "Reporter de Guerre",
+                "titre": "Reporter de guerre",
                 "image": "img/camera.png"
             },
             {
@@ -25,29 +27,23 @@
                 "image": "img/baignoire.png"
             }
         ],
+        "bloctextes": [
+            {
+                "Titre" : "Pourquoi ?",
+                "Texte" : "Lee Miller est l’une des icônes féminines les plus remarquables du 20e siècle. Elle débute sa carrière en tant que mannequin sur les couvertures des magazines de Vogue. Passionnée par la photographie, c'est pour ce même magazine qu'elle va finalement devenir photojournaliste puis reporter de Guerre. Elle passe ainsi de figure de beauté à femme d'action, qui n'hésite pas à s'exposer en première ligne afin d'informer le monde sur l'horreur de la Seconde Guerre Mondiale."
+            },
 
-        "Description": {
-            "titre": "Reporter Inspirante",
-            "image": "img/cerclerose.png",
-            "bloctextes": [
-                {
-                    "Titre" : "Pourquoi",
-                    "Texte" : "Lee Miller est l’une des icônes féminines les plus remarquables du 20e siècle. Elle débute sa carrière en tant que mannequin sur les couvertures des magazines de Vogue. Passionnée par la photographie, c'est pour ce même magazine qu'elle va finalement devenir photojournaliste puis reporter de Guerre. Elle passe ainsi de figure de beauté à femme d'action, qui n'hésite pas à s'exposer en première ligne afin d'informer le monde sur l'horreur de la Seconde Guerre Mondiale."
-                },
+            {
+                "Titre" : "Ses actions :",
+                "Texte" : "À l'âge de 20 ans, elle commence sa carrière à New York et devient le mannequin vedette de Vogue. Installée à Paris, deux ans plus tard, elle  travaille des deux côtés de l’objectif pour le Vogue français. Elle réalise alors des portraits, des photographies de mode, dans la mouvance surréaliste.En 1942, elle devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. Elle photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et découvre les camps de concentration de Buchenwald et Dachau. Le 30 avril 1945, le jour même où Hitler se suicide dans son Bunker de Berlin, Lee Miller et David E. Scherman réalisent une visite de son appartement. A la nouvelle de la mort du Füher, ils décident de séjourner sur les lieux. Scherman prendra alors l'une de ses plus célèbres photos : Lee prenant un bain dans la baignoire personnelle du dictateur, un portrait de ce dernier à ses côtés."
+            }
 
-                {
-                    "Titre" : "Ses actions :",
-                    "Texte" : "À l'âge de 20 ans, elle commence sa carrière à New York et devient le mannequin vedette de Vogue. Installée à Paris, deux ans plus tard, elle  travaille des deux côtés de l’objectif pour le Vogue français. Elle réalise alors des portraits, des photographies de mode, dans la mouvance surréaliste.En 1942, elle devient correspondante de guerre au sein de l'armée américaine pour Vogue Grande-Bretagne. Elle photographie la chute du IIIe Reich, témoigne de la vie quotidienne des soldats et découvre les camps de concentration de Buchenwald et Dachau. Le 30 avril 1945, le jour même où Hitler se suicide dans son Bunker de Berlin, Lee Miller et David E. Scherman réalisent une visite de son appartement. A la nouvelle de la mort du Füher, ils décident de séjourner sur les lieux. Scherman prendra alors l'une de ses plus célèbres photos : Lee prenant un bain dans la baignoire personnelle du dictateur, un portrait de ce dernier à ses côtés."
-                }
-
-            ]
-        },
-
-
+        ],
+        
         "Biographie" : [
 
             {
-                "titre": "Reporter de guerre engagée"
+                "titre": "img/titrereporterguerre.svg"
             },
 
             {
@@ -76,11 +72,14 @@
             {
                 "titre": "©David E. Scherman – Lee  Miller dans la baignoire d’Hitler, Munich, Allemagne, avril 1945",
                 "image": "img/leebaignoire.png"
+            },
+            {
+                "soustitre" : "Ultime pied de nez à Hitler et au IIIe Reich"
             }
         ],
-
         "FriseChronologique": [
             {
+                "image" : "img/pointRHorizontal.svg",
                 "date": "1927",
                 "intitule": "Lee Miller commence sa carrière à New York et devient le mannequin vedette de Vogue."
             },
